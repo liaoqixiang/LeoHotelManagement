@@ -5,23 +5,23 @@ namespace LeoHotelManagement.Model
 	{
    		     
       	/// <summary>
-		/// 管理员账号
+		/// admin account
         /// </summary>
         public string uId { get; set; }
 		/// <summary>
-		/// 管理员密码
+		/// admin password
         /// </summary>
         public string uPwd { get; set; }
 		/// <summary>
-		/// 管理员昵称
+		/// admin name
         /// </summary>
         public string uName { get; set; }
 		/// <summary>
-		/// 是否删除 0代表未删除，1代表删除
+		/// 0 means not deleted,1 means deleted
         /// </summary>
         public bool uIsDel { get; set; }
 		/// <summary>
-		/// 账号备注
+		/// remark
         /// </summary>
         public string uRemark { get; set; }
 		   
