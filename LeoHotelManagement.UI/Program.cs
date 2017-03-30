@@ -16,7 +16,19 @@ namespace LeoHotelManagement.UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //LoginForm login = new LoginForm();
+            MainForm mf = new MainForm();
+            Application.Run(mf);
+            if (mf.DialogResult == DialogResult.OK)
+                Application.Run(new Main_RoomType());
+            if (mf.DialogResult == DialogResult.Yes)
+                Application.Run(new Manage_Room());
+            //if (login.DialogResult == DialogResult.OK)
+            //{
+            //    Application.Run(new Main_RoomType());
+            //}
+
+
         }
     }
 }

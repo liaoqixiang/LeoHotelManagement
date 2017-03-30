@@ -44,6 +44,10 @@ VALUES (
 					new SqlParameter("@roomRemark", model.roomRemark),					
 					new SqlParameter("@roomIsDel", model.roomIsDel)					
                 );
+            if (res == DBNull.Value)
+            {
+                return 0;
+            }
             return res == null ? 0 : Convert.ToInt32(res);
         }
         #endregion

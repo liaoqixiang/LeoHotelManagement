@@ -52,10 +52,46 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_RoomType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_RoomType.Designer.cs">
+      <DependentUpon>Main_RoomType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Room.Designer.cs">
+      <DependentUpon>Manage_Room.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_RoomType.resx">
+      <DependentUpon>Main_RoomType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Room.resx">
+      <DependentUpon>Manage_Room.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -65,6 +101,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -88,6 +125,30 @@
       <Project>{67afe3c8-e645-44a2-9093-f4c2e6d67c21}</Project>
       <Name>LeoHotelManagement.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deleteHouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddHouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foregrounding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JiaoBan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SetaddHouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updateHouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Trash-Recyclebin-Empty-Closed.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
